@@ -30,6 +30,10 @@ We have to install BEAST by ourselves because the software list of HPC doesn't i
     * `cd beagle-lib`
     * `./autogen.sh`
     * `./configure --prefix=$HOME --with-cuda=/share1/cuda/10.2/`
+    * adjust compilation flags (becasue the compiling version on your account shoule be match with those of gpu queue)
+        * `find -iname "Makefile" -exec sed -i -e"s/march=native/march=ivybridge/g" {} +`
+        * `find -iname "Makefile" -exec sed -i -e"s/-mavx2//g" {} +`
+        * `find -iname "Makefile" -exec sed -i -e"s/-mfma//g" {} +`
     * `make install`
 
 Reference: 
