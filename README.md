@@ -41,3 +41,11 @@ Reference:
 * [https://github.com/beagle-dev/beagle-lib/wiki/LinuxInstallInstructions](https://github.com/beagle-dev/beagle-lib/wiki/LinuxInstallInstructions)
 
 ### submit the job
+* write a batch script(refer to script/pbs_r1.cmd)
+* submit it to the queue manager: `qsub script/pbs_r1.cmd`
+* check and delete the job you submitted (more commands please refer to the following reference):
+    * check all your jobs status: `qa`
+    * check the resource utilization of a running job: `ta jobID`
+    * delete a job: `qdel jobID`
+
+Reference: [https://www.its.hku.hk/services/research/hpc/hpc2015/userguide](https://www.its.hku.hk/services/research/hpc/hpc2015/userguide)
