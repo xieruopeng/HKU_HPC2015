@@ -11,7 +11,7 @@ Both staff and student in HKU can apply for this account. Please follow this lin
 
 Reference: [https://www.its.hku.hk/services/research/hpc/userguide](https://www.its.hku.hk/services/research/hpc/userguide)
 
-### install BEAST on the HPC cluster
+### Install BEAST on the HPC cluster
 We have to install BEAST by ourselves because the software list of HPC doesn't include it.
 * load several modules to support installation environment for BEAST
     * `module load gcc/8.2.0`
@@ -40,7 +40,7 @@ Reference:
 * [https://beast.community/install_on_unix](https://beast.community/install_on_unix)
 * [https://github.com/beagle-dev/beagle-lib/wiki/LinuxInstallInstructions](https://github.com/beagle-dev/beagle-lib/wiki/LinuxInstallInstructions)
 
-### submit the job
+### Submit the job
 * write a batch script(refer to script/pbs_r1.cmd)
 * submit it to the queue manager: `qsub script/pbs_r1.cmd`
 * check and delete the job you submitted (more commands please refer to the following reference):
